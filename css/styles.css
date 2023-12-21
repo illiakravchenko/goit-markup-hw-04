@@ -131,6 +131,15 @@ address {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bg.jpg);
 }
 
 .hero-title {
@@ -194,6 +203,18 @@ address {
   gap: 24px;
   list-style-type: none;
 }
+.feautures-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
+}
+
 .feautures-item {
   width: calc((100% - 72px) / 4);
 }
@@ -259,7 +280,6 @@ address {
 
 .card-text {
   padding: 32px 0;
-  margin-bottom: 8px;
 }
 .team-name {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -282,6 +302,21 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
+}
+.team-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.team-socials-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 12px 12px;
 }
 
 .team-item:hover {
@@ -365,6 +400,7 @@ address {
     #2e2f42
   );
 }
+
 .footer-logo {
   color: var(--IRIS, #4d5ae5);
   font-family: 'Raleway', sans-serif;
@@ -397,7 +433,36 @@ address {
   line-height: 1.5;
   letter-spacing: 0.32px;
   max-width: 264px;
-  margin-top: 17.5px;
+}
+
+.footer-socials {
+  outline: 2px solid red;
+}
+
+.footer-social-text {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footer-socials-list {
+  display: flex;
+  outline: 1px solid green;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-socials-item {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 8px 8px;
 }
 
 /* #endregion */
