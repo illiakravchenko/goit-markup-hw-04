@@ -578,7 +578,6 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   background-color: #31d0aa;
-  transition-duration: 250ms;
 }
 .footer-socials-icon {
   fill: #f4f4fd;
